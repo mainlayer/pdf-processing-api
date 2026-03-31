@@ -1,7 +1,7 @@
 """Mainlayer payment middleware.
 
 Handles billing for paid PDF operations via the Mainlayer API
-(https://api.mainlayer.xyz).  Every charged endpoint must call
+(https://api.mainlayer.fr).  Every charged endpoint must call
 `charge_for_operation` before returning results to the caller.
 """
 
@@ -20,7 +20,7 @@ from models import OperationType, PaymentResult
 # Constants
 # ---------------------------------------------------------------------------
 
-MAINLAYER_BASE_URL = os.getenv("MAINLAYER_BASE_URL", "https://api.mainlayer.xyz")
+MAINLAYER_BASE_URL = os.getenv("MAINLAYER_BASE_URL", "https://api.mainlayer.fr")
 MAINLAYER_API_KEY = os.getenv("MAINLAYER_API_KEY", "")
 
 # Price table in USD

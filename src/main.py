@@ -72,7 +72,7 @@ app = FastAPI(
     version="1.0.0",
     contact={
         "name": "Mainlayer",
-        "url": "https://mainlayer.xyz",
+        "url": "https://mainlayer.fr",
     },
     license_info={"name": "MIT"},
 )
